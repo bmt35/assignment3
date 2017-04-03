@@ -13,6 +13,8 @@
 			$this->lastName=$lastName;
 			$this->major=$major;
 			$this->homeTown=$homeTown;
+			 echo "<!-- Setting new Job to -->";
+
 		}
 
 		public function __clone() {

@@ -1,7 +1,7 @@
 <?php 
 	include 'ChildClass.php';
-	$first=new ParentClass("B", "T", "CS", "PGH");
-	$second=new ChildClass("L", "Z", "BIO", "PHIL");
+	$first=new ParentClass("Brandon", "Torchia", "CS", "PGH");
+	$second=new ChildClass("Ryan", "Torchia", "Criminal Justice", "PGH");
 
 ?>
 
@@ -14,18 +14,16 @@
 	<link rel="stylesheet" href="assignment3.css">
 </head>
 <body>
-  <h1>hi</h1>
-  <p>here is some info about me</p>
+  <h1>Object Oriented PHP!!</h1>
+  <p>Here is some info about me</p>
   <?= $first; ?>
-  <p>Here info about my child</p>
+  <p>Here is info about my brother</p>
   <?= $second; ?>
-  <p>Changing majors</p>
-  <?= $second->setMajor('CHEM'); ?>
-  <p>Here info about my child</p>
+  <p>He changed majors in college</p>
+  <?= $second->setMajor('Marketing'); ?>
   <?= $second; ?>
-  <p>I have decided to move</p>
+  <p>He decided to move</p>
   <?= $second->setHomeTown('NYC'); ?>
   <?= $second; ?>
-	
 </body>
 </html>

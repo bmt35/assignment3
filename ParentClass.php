@@ -8,7 +8,6 @@
 		private $h;
 
 		public function __construct($f, $l, $m, $h) {
-			 echo "<!-- here-->";
 			$this->firstName=$f;
 			$this->lastName=$l;
 			$this->major=$m;
@@ -32,10 +31,9 @@
 		}
 
 		public function __toString() {
-			$name="Hello, my name is ". $this->getFirstName() . $this->getLastName() . " how are you?";
+			$name="Hello, my name is ". $this->getFirstName() . " ". $this->getLastName() . " how are you?";
 			$where="I am from: ". $this->getHomeTown();
 			$study="I study: ". $this->getMajor();
 			return "<div> ". $name . "<br>" . $where . "<br>" . $study . "<br> </div>";
 		}
-		
 	}
